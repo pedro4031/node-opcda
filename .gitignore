@@ -1,0 +1,9 @@
+# Directorio de dependencias de Node
+node_modules/
+
+# Directorio de salida de TypeScript
+dist/
+
+# Archivos de configuración
+.env
+.DS_Store
