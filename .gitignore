@@ -1,9 +1,14 @@
-# Directorio de dependencias de Node
-node_modules/
+# Dependency directory
+/node_modules
 
-# Directorio de salida de TypeScript
-dist/
+# TypeScript build output
+/dist
 
-# Archivos de configuración
-.env
+# Editor and OS-specific files
+.vscode/
 .DS_Store
+*.log
+npm-debug.log*
+
+# Environment variables
+.env

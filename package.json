@@ -1,29 +1,53 @@
 {
   "name": "node-opcda",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Node.js client library for connecting to and reading data from OPC DA servers.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc && cpx \"src/*.node\" dist"
   },
-  "keywords": ["opc","opc da","plc", "iot", "scada", "industrial", "automation", "client", "node"],
+  "keywords": [
+    "opc",
+    "opc da",
+    "plc",
+    "iot",
+    "scada",
+    "industrial",
+    "automation",
+    "client",
+    "node"
+  ],
   "author": "Pedro Casabona",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pedro4031/node-opcda.git"
+    "url": "git+https://github.com/pedro4031/node-opcda.git"
   },
   "bugs": {
     "url": "https://github.com/pedro4031/node-opcda/issues"
   },
   "homepage": "https://github.com/pedro4031/node-opcda#readme",
   "engines": {
-  "node": ">=18.0.0"
+    "node": ">=18.0.0"
   },
+  "files": [
+    "dist/",
+    "src/types/",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "types": "src/types/index.d.ts", 
   "devDependencies": {
     "@types/node": "^24.5.2",
+    "cpx": "^1.5.0",
     "typescript": "^5.9.2"
   }
 }
