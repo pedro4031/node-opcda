@@ -13,12 +13,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/your-repo-name.git"
+    "url": "https://github.com/pedro4031/node-opcda.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/your-repo-name/issues"
+    "url": "https://github.com/pedro4031/node-opcda/issues"
   },
-  "homepage": "https://github.com/your-username/your-repo-name#readme",
+  "homepage": "https://github.com/pedro4031/node-opcda#readme",
   "engines": {
   "node": ">=18.0.0"
   },
