@@ -1,6 +1,6 @@
 {
   "name": "@pedro4031/node-opcda",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Node.js client library for connecting to and reading data from OPC DA servers.",
   "type": "module",
   "scripts": {
