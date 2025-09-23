@@ -1,5 +1,5 @@
 {
-  "name": "node-opcda",
+  "name": "@pedro4031/node-opcda",
   "version": "1.1.0",
   "description": "A Node.js client library for connecting to and reading data from OPC DA servers.",
   "type": "module",
@@ -33,10 +33,11 @@
   },
   "files": [
     "dist/",
-    "src/types/",
     "LICENSE",
     "README.md"
   ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -44,7 +45,6 @@
       "types": "./dist/index.d.ts"
     }
   },
-  "types": "src/types/index.d.ts", 
   "devDependencies": {
     "@types/node": "^24.5.2",
     "cpx": "^1.5.0",
